@@ -14,15 +14,14 @@ class CocktailsController < ApplicationController
 
   def create
     @cocktail = Cocktail.new(cocktail_params)
-
-      if @garden.save
-        format.html { redirect_to @cocktail, notice: 'Cocktail was successfully created.' }
-        format.json { render :show, status: :created, location: @cocktail }
-      else
-        format.html { render :new }
+    if @cocktail.save
+      redirect_to cocktail_path(@cocktail)
+    else
+      render :new
+    end
   end
 
   def cocktail_params
-    params.require(:cocktail).permit(:name, :ingredients)
+    params.require(:cocktail).permit(:name)
   end
 end
