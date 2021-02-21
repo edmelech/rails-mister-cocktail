@@ -23,3 +23,6 @@ end
 Cocktail.create(name: "Whiskey Sour")
 Cocktail.create(name: "Espresso Martini")
 Cocktail.create(name: "Old Fashioned")
+Cocktail.create(name: "White Russian")
+Cocktail.create(name: "Martini")
+Cocktail.create(name: "Negroni")

@@ -12,6 +12,13 @@
   </head>
 
   <body>
+    <div style="background: lightgray; padding 16px">
+      <ul>
+        <li><%=link_to "Home", root_path %></li>
+        <li><%=link_to "About Us", about_path %></li>
+        <li><%=link_to "Contact", contact_path %></li>
+      </ul>
+    </div>
     <%= yield %>
   </body>
 </html>
