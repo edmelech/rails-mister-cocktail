@@ -3,6 +3,26 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-image: image-url("whisky.jpg");
-  background-size: cover;
+  background-image: image-url("old-fashioned.jpg");
+  // background-size: contain;
+  h1 {
+    color: white;
+    font-family: garamond;
+    margin-bottom: 20px;
+  }
+  .btn {
+    padding: 15px 50px;
+    font-family: helvetica;
+    font-weight: lighter;
+    border-radius: 5px;
+    border-color: #1D1007;
+    background-color: #1D1007;
+  }
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
