@@ -24,6 +24,8 @@
 
 .banner-content {
   display: flex;
+  align-self: flex-start;
+  padding-top: 10%;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
