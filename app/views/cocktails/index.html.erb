@@ -1,7 +1,13 @@
 
 <div class="cocktail-menu">
   <h1>Cocktails</h1>
+  <div>
+      <%= link_to new_cocktail_path, class: 'btn btn-primary' do %>
+        <i class="fas fa-plus"></i> Add Cocktail
+      <% end %>
+    </div>
 </div>
+<br>
 <div class="cocktails">
   <% @cocktails.each do |cocktail| %>
   <li><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
